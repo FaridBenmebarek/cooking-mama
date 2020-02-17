@@ -60,6 +60,7 @@ NAVBAR
 
 .nav-link {
     color: var(--mainPink);
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
     font-size: 1.5rem;
 }
@@ -75,6 +76,7 @@ NAVBAR
 .cart-info__icon {
     color: var(--mainBlack);
     cursor: pointer;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -84,6 +86,7 @@ NAVBAR
     border-radius: 0.25rem;
     padding: 0.4rem 0.6rem;
     cursor: pointer;
+    -webkit-transition: all 1s ease;
     transition: all 1s ease;
 }
 
@@ -106,6 +109,7 @@ BANNER
 
 .max-height {
     min-height: calc(100vh - 76px);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--yellowTrans)), to(var(--yellowTrans))), url(../img/headerBcg.jpeg) center/cover no-repeat fixed;
     background: linear-gradient(var(--yellowTrans), var(--yellowTrans)), url(../img/headerBcg.jpeg) center/cover no-repeat fixed;
     position: relative;
 }
@@ -145,6 +149,7 @@ CART
     background: rgba(255, 255, 255, 0.5);
     top: 76px;
     right: 0;
+    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     width: 0;
     overflow: hidden;
@@ -153,19 +158,23 @@ CART
 .show-cart {
     width: 18rem;
     padding: 2rem 1.5rem;
+    -webkit-transform: rotateY(-360deg);
     transform: rotateY(-360deg);
 }
 
 .cart-item {
+    -webkit-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
 }
 
 .cart-item-remove {
     color: var(--mainPink);
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
 .cart-item-remove:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     color: var(--mainBlack);
 }
@@ -194,6 +203,7 @@ ABOUT
     height: 100%;
     outline: 0.5rem solid var(--mainYellow);
     z-index: -1;
+    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
 
@@ -219,6 +229,7 @@ STORE
 }
 
 .single-item {
+    -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
 }
 
@@ -233,10 +244,12 @@ STORE
 }
 
 .store-img {
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
 .img-container:hover .store-img {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -247,11 +260,14 @@ STORE
     padding: 0.75rem;
     background: var(--mainYellow);
     border-top-left-radius: 1rem;
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    -webkit-transform: translate(100%, 100%);
     transform: translate(100%, 100%)
 }
 
 .img-container:hover .store-item-icon {
+    -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
@@ -268,6 +284,7 @@ SERVICES
 
 .services {
     color: var(--mainWhite);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url('../img/servicesBcg.jpeg') center/cover no-repeat fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/servicesBcg.jpeg') center/cover no-repeat fixed;
 }
 
@@ -297,6 +314,7 @@ FOOTER
 .footer-icon {
     font-size: 1.5rem;
     color: var(--mainWhite);
+    -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
 
